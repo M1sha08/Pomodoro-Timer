@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pomodoro Timer</title>
 
-  <link rel="stylesheet" href="style.css">
+  <title>Pomodoro Timer</title>
 
   <!-- Linking Winky Rough Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:wght@300..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome - Symbols -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- theme-toggle button -->
+  <button id="theme-toggle">
+    <i class="fa-solid fa-circle-half-stroke"></i>
+  </button>
+  <!-- heading -->
   <h1 class="heading">Pomodoro Timer</h1>
 
+  <!-- pomodoro content -->
   <div class="pomodoro-content">
 
+    <!-- pomodoro time controls -->
     <div class="time-controls">
 
       <button class="pomodoro-time selected">
@@ -34,6 +47,7 @@
 
     <h1 class="time">25:00</h1>
 
+    <!-- pomodoro clock control buttons  -->
     <div class="control-buttons">
       <button class="startBtn">
         START
@@ -48,8 +62,22 @@
       </button>
     </div>
   </div>
+<!-- Task section -->
+<section class="task-section">
 
+  <div class="task-add-container">
+    <input id="add-task-input" type="text" placeholder="Add a new Task">
+    <button type="submit" id="add-task-button">+</button>
+  </div>
 
+  <div class="task-container">
+    <h1 class="no-tasks-text" style="display: block;">No tasks yet</h1>
+
+    
+  </div>
+</section>
+
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
